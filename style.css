@@ -1,0 +1,93 @@
+.page {
+  height: 1700px;
+  font-size: 20px;
+}
+
+.parallax-window {
+  min-height: 500px;
+  background-color: transparent;
+}
+
+.parallax-window__text {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+}
+
+.parallax-window__a {
+  font-weight: 700;
+  margin-left: 10%;
+  font-size: 1.2em;
+}
+
+.narbar-phone {
+  display: none;
+}
+
+.narbar-phone__a {
+  color: whitesmoke;
+  margin-right: 10px;
+}
+
+@media all and (max-width: 480px) {
+  .narbar-phone {
+    display: block;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .narbar-pc {
+    display: none;
+  }
+}
+
+.jumbotron {
+  background-color: transparent;
+}
+
+.jumbotron__p {
+  color: whitesmoke;
+}
+
+#carouselExampleIndicators {
+  width: 60%;
+  height: 30%;
+  left: 20%;
+  top: 30px;
+}
+
+.accordion {
+  width: 60%;
+  position: relative;
+  top: 20px;
+  left: 20%;
+  border: 1px dashed lightblue;
+}
+
+.card {
+  background-color: transparent;
+  font-weight: 700;
+}
+
+.card-body {
+  background-color: whitesmoke;
+}
+
+.form-group {
+  font-size: 1.2em;
+  color: whitesmoke;
+  text-shadow: 8px 8px 8px grey;
+}
+
+.form-control-plaintext {
+  color: whitesmoke;
+  font-weight: 700;
+  text-shadow: 8px 8px 8px grey;
+}
+
+#map {
+  width: 100%;
+  height: 250px;
+  background-color: transparent;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,100 @@
+// public
+$color: whitesmoke;
+$font-weight: 700;
+$ms: 480px;
+$text-shadow: 8px 8px 8px grey;
+.page {
+    height: 1700px;
+    font-size: 20px;
+}
+
+.parallax-window {
+    min-height: 500px;
+    background-color: transparent;
+
+    &__text {
+        position: absolute;
+        top: 50px;
+        left: 30px;
+    }
+
+    &__a{
+        font-weight: $font-weight;
+        margin-left: 10%;
+        font-size: 1.2em;
+    }
+}
+.narbar-phone{
+    display: none;
+
+    &__a{
+        color: $color;
+        margin-right: 10px;
+    }
+}
+@mixin phone-width() {
+    @media all and (max-width: $ms){
+        @content;
+    }
+}
+.narbar-phone{
+    @include phone-width{
+       display: block;
+    }
+}
+.narbar-pc{
+    @include phone-width{
+       display: none;
+    }
+}
+
+// header
+.jumbotron{
+    background-color: transparent;
+
+    &__p{
+        color:$color;
+    }
+}
+
+//show imgs
+#carouselExampleIndicators{
+    width: 60%;
+    height: 30%;
+    left: 20%;
+    top: 30px;
+}
+
+//covining explanations
+.accordion{
+  width: 60%;
+  position: relative;
+  top: 20px;
+  left: 20%;
+  border: 1px dashed lightblue;
+}
+.card{
+    background-color: transparent;
+    font-weight: $font-weight;
+}
+.card-body{
+    background-color: $color;
+}
+
+//googole map and contact info
+.form-group,{
+    font-size: 1.2em;
+    color: $color;
+    text-shadow: $text-shadow;
+}
+.form-control-plaintext{
+    color: $color;
+    font-weight: $font-weight;
+    text-shadow: $text-shadow;
+}
+#map {
+    width: 100%;
+    height: 250px;
+    background-color: transparent;
+  }
+
